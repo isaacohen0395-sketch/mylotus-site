@@ -3,13 +3,143 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MyLotus: Personalized Quotes &amp; Daily Affirmations</title>
+<title>MyLotus: Personalized Daily Quotes &amp; Affirmations From Your AI (iPhone)</title>
 <meta name="description" content="MyLotus turns what Claude or ChatGPT already knows about you into a personalized phrase every morning. Set up in 3 taps.">
 <meta property="og:title" content="MyLotus: a phrase written for you, every morning">
 <meta property="og:description" content="Personalized quotes and affirmations from what your AI already knows about you. Set up in 3 taps.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://my-lotus.app/">
 <meta name="theme-color" content="#F0F3EE">
+<link rel="canonical" href="https://my-lotus.app/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:site_name" content="MyLotus">
+<meta property="og:image" content="https://my-lotus.app/assets/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MyLotus: a phrase written for you, every morning">
+<meta name="twitter:description" content="Personalized quotes and affirmations from what Claude or ChatGPT already knows about you. Set up in 3 taps.">
+<meta name="twitter:image" content="https://my-lotus.app/assets/og-image.png">
+<meta name="apple-itunes-app" content="app-id=6826226276">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://my-lotus.app/#org",
+   "name": "MyLotus",
+   "url": "https://my-lotus.app/",
+   "logo": "https://my-lotus.app/assets/apple-touch-icon.png",
+   "email": "contact@my-lotus.app",
+   "founder": {
+    "@type": "Person",
+    "name": "Isaac Cohen"
+   }
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://my-lotus.app/#website",
+   "url": "https://my-lotus.app/",
+   "name": "MyLotus",
+   "publisher": {
+    "@id": "https://my-lotus.app/#org"
+   },
+   "inLanguage": [
+    "en",
+    "fr"
+   ]
+  },
+  {
+   "@type": "MobileApplication",
+   "@id": "https://my-lotus.app/#app",
+   "name": "MyLotus: Personalized Quotes",
+   "alternateName": "MyLotus",
+   "operatingSystem": "iOS",
+   "applicationCategory": "HealthApplication",
+   "applicationSubCategory": "Daily affirmations and personalized quotes",
+   "description": "MyLotus writes one personalized quote, proverb or affirmation every morning, based on a short profile your own AI assistant (Claude or ChatGPT) writes about you, or on a one-minute questionnaire.",
+   "url": "https://my-lotus.app/",
+   "downloadUrl": "https://apps.apple.com/app/id6826226276",
+   "installUrl": "https://apps.apple.com/app/id6826226276",
+   "publisher": {
+    "@id": "https://my-lotus.app/#org"
+   },
+   "inLanguage": [
+    "en",
+    "fr"
+   ],
+   "featureList": [
+    "A personalized phrase every morning",
+    "The author and the reason behind each phrase",
+    "Profile from Claude or ChatGPT in 3 taps",
+    "Instagram share cards and wallpapers",
+    "Couple pack: one mirror phrase for two"
+   ],
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "MyLotus Premium Yearly (7-day free trial)",
+     "price": "29.99",
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "MyLotus Premium Monthly",
+     "price": "4.99",
+     "priceCurrency": "USD"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://my-lotus.app/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is MyLotus?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "MyLotus is an iPhone app that writes you one personalized quote, proverb or affirmation every morning, chosen for your goals, your challenges and the tone you respond to."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How does MyLotus personalize my phrases?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "MyLotus gives you a prompt to paste into Claude or ChatGPT. Your assistant writes a short profile of you from what it already knows, you paste it back into MyLotus, and every phrase is written from that profile. You can also answer a one-minute questionnaire instead."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does MyLotus work with ChatGPT and Claude?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The setup works with Claude, ChatGPT or any AI assistant that can answer a prompt. It takes 3 taps: copy, ask your AI, paste."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much does MyLotus cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "MyLotus Premium costs $29.99 per year with a 7-day free trial, or $4.99 per month. Subscriptions are managed by Apple and can be canceled anytime in your App Store settings."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is my data private?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Your profile is only used to write your phrases. MyLotus shows no ads, never sells your data, and you can delete your account and all your data anytime in Settings."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,11 +170,12 @@
   <div class="container split">
     <div class="reveal">
       <div class="eyebrow"><b>01</b><span data-i18n="eyebrow1">Be understood</span></div>
-      <div class="first-badge"><span class="rank">1st</span><span data-i18n="firstBadge">quote app personalized by your own AI</span><span class="mini-ai"><img src="/assets/ai-claude.png" alt="Claude"><img src="/assets/ai-chatgpt.png" alt="ChatGPT"></span></div>
+      <div class="first-badge"><span class="rank">#1</span><span data-i18n="firstBadge">quote app personalized by your own AI</span><span class="mini-ai"><img src="/assets/ai-claude.png" alt="Claude"><img src="/assets/ai-chatgpt.png" alt="ChatGPT"></span></div>
       <h1 style="margin-top:18px" data-i18n="h1">A phrase written for you, every morning.</h1>
       <p class="lead" data-i18n="lead1">MyLotus turns what Claude or ChatGPT already knows about you into personalized quotes and affirmations. Set up in 3 taps.</p>
       <div class="cta-row">
         <a class="badge js-store" href="#download"><img class="js-badge" src="https://tools.applemarketingtools.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="162" height="54"></a>
+        <button type="button" class="btn-try js-try" data-i18n="tryBtn">Try a free phrase made for you</button>
         <span class="trial" data-i18n="trial"><strong>7 days free</strong> on the yearly plan</span>
       </div>
     </div>
@@ -177,6 +308,20 @@
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <h2 class="reveal" data-i18n="faqH">Questions, answered.</h2>
+    <div class="faq-list">
+      <details class="reveal"><summary data-i18n="faq1q">What is MyLotus?</summary><p data-i18n="faq1a">An iPhone app that writes you one personalized quote, proverb or affirmation every morning, chosen for your goals, your challenges and the tone you respond to.</p></details>
+      <details class="reveal"><summary data-i18n="faq2q">How does it personalize my phrases?</summary><p data-i18n="faq2a">MyLotus gives you a prompt to paste into Claude or ChatGPT. Your assistant writes a short profile of you from what it already knows, you paste it back, and every phrase is written from that profile. No AI? Answer a one-minute questionnaire instead.</p></details>
+      <details class="reveal"><summary data-i18n="faq3q">Does it work with ChatGPT and Claude?</summary><p data-i18n="faq3a">Yes, with Claude, ChatGPT or any AI assistant that can answer a prompt. It takes 3 taps: copy, ask your AI, paste.</p></details>
+      <details class="reveal"><summary data-i18n="faq4q">How much does it cost?</summary><p data-i18n="faq4a">$29.99 per year with a 7-day free trial, or $4.99 per month. Subscriptions are managed by Apple and can be canceled anytime.</p></details>
+      <details class="reveal"><summary data-i18n="faq5q">Is my data private?</summary><p data-i18n="faq5a">Your profile is only used to write your phrases. No ads, your data is never sold, and you can delete your account anytime in Settings.</p></details>
+    </div>
+  </div>
+</section>
+
 <!-- DOWNLOAD -->
 <section class="download" id="download">
   <div class="container">
@@ -210,6 +355,36 @@
   </div>
 </footer>
 
+
+<div class="try-modal" id="tryModal" role="dialog" aria-modal="true" aria-labelledby="tryTitle" hidden>
+  <div class="try-card">
+    <button class="try-close" type="button" aria-label="Close">×</button>
+    <div class="try-step" id="tryForm">
+      <h3 id="tryTitle" data-i18n="tryH">Your free phrase, in 2 taps</h3>
+      <p class="try-q" data-i18n="tryQ1">What do you need more of right now?</p>
+      <div class="try-opts" data-group="goal">
+        <button type="button" data-v="confidence" data-i18n="gConf">Confidence</button>
+        <button type="button" data-v="calm" data-i18n="gCalm">Calm</button>
+        <button type="button" data-v="motivation" data-i18n="gMot">Motivation</button>
+        <button type="button" data-v="love" data-i18n="gLove">Self-love</button>
+      </div>
+      <p class="try-q" data-i18n="tryQ2">Which tone speaks to you?</p>
+      <div class="try-opts" data-group="tone">
+        <button type="button" data-v="gentle" data-i18n="tGentle">Gentle</button>
+        <button type="button" data-v="direct" data-i18n="tDirect">Direct</button>
+        <button type="button" data-v="stoic" data-i18n="tStoic">Stoic</button>
+      </div>
+      <button type="button" class="btn-try wide" id="tryGo" disabled data-i18n="tryGo">Show my phrase</button>
+    </div>
+    <div class="try-step" id="tryResult" hidden>
+      <span class="tag" data-i18n="tryTag">A taste of MyLotus</span>
+      <blockquote id="tryPhrase"></blockquote>
+      <p class="try-note" data-i18n="tryNote">In the app, every phrase is written from your own profile, with the reason behind it.</p>
+      <a class="btn-try wide js-store" href="#download" data-i18n="tryCta">Get yours every morning, 7 days free</a>
+      <button type="button" class="try-again" id="tryAgain" data-i18n="tryAgain">Try another</button>
+    </div>
+  </div>
+</div>
 <script src="/assets/qrcode.js"></script>
 <script>
 /* ====== ONE SETTING TO CHANGE ======
@@ -219,7 +394,7 @@ var APP_STORE_URL = "https://apps.apple.com/app/id6826226276";
 /* =================================== */
 
 var FR = {
-  proofStat:"personnes ont essayé les phrases MyLotus par message et par e-mail, bien avant que ce soit une app.", pressLabel:"Les idées derrière MyLotus, explorées dans", revEyebrow:"Avant que ce soit une app", revH:"Ce qu’on nous a dit.", revLead:"Des messages de personnes qui recevaient des phrases personnalisées par message et par e-mail, avant que MyLotus devienne une app.", rv1:"« C’est incroyable comme ça booste et redonne confiance en soi. »", rv1w:"21 ans · Étudiante en médecine", rv2:"« Un vrai coup de boost au quotidien. »", rv2w:"36 ans · Maman", rv3:"« C’est absolument génial, à quel point ça me connaît. »", rv3w:"28 ans · Avocat", revNote:"Partagés avec leur accord.", firstBadge:"app de citations personnalisée par ta propre IA", resEyebrow:"La science derrière", resH:"Fondé sur la recherche, pas sur le hasard.", r1t:"Auto-affirmation", r1p:"Réfléchir à ses propres valeurs active les zones du cerveau liées à la récompense et à la perception de soi.", r2t:"Gratitude", r2p:"Les personnes qui notaient régulièrement ce dont elles étaient reconnaissantes déclaraient un meilleur bien-être que celles qui notaient leurs tracas.", r3t:"Des mots positifs, chaque jour", r3p:"Exprimer sa gratitude est régulièrement associé à plus de bonheur et de bien-être.", resNote:"Des études qui inspirent l’écriture de MyLotus. MyLotus n’est affilié à aucun de ces auteurs ni institutions.", nav1:"Être compris·e", nav2:"Sans effort", nav3:"Être soi", navCta:"Télécharger",
+  proofStat:"personnes ont essayé les phrases MyLotus par message et par e-mail, bien avant que ce soit une app.", pressLabel:"Les idées derrière MyLotus, explorées dans", revEyebrow:"Avant que ce soit une app", revH:"Ce qu’on nous a dit.", revLead:"Des messages de personnes qui recevaient des phrases personnalisées par message et par e-mail, avant que MyLotus devienne une app.", rv1:"« C’est incroyable comme ça booste et redonne confiance en soi. »", rv1w:"21 ans · Étudiante en médecine", rv2:"« Un vrai coup de boost au quotidien. »", rv2w:"36 ans · Maman", rv3:"« C’est absolument génial, à quel point ça me connaît. »", rv3w:"28 ans · Avocat", revNote:"Partagés avec leur accord.", tryBtn:"Essaie gratuitement une phrase faite pour toi", tryH:"Ta phrase gratuite, en 2 clics", tryQ1:"De quoi as-tu le plus besoin en ce moment ?", gConf:"Confiance", gCalm:"Calme", gMot:"Motivation", gLove:"Amour de soi", tryQ2:"Quel ton te parle ?", tGentle:"Doux", tDirect:"Direct", tStoic:"Stoïcien", tryGo:"Voir ma phrase", tryTag:"Un avant-goût de MyLotus", tryNote:"Dans l’app, chaque phrase est écrite à partir de ton propre profil, avec la raison derrière.", tryCta:"Reçois la tienne chaque matin, 7 jours gratuits", tryAgain:"Une autre", faqH:"Vos questions, nos réponses.", faq1q:"Qu’est-ce que MyLotus ?", faq1a:"Une app iPhone qui t’écrit chaque matin une citation, un proverbe ou une affirmation personnalisés, choisis pour tes objectifs, tes défis et le ton qui te parle.", faq2q:"Comment mes phrases sont-elles personnalisées ?", faq2a:"MyLotus te donne un prompt à coller dans Claude ou ChatGPT. Ton assistant écrit un court profil de toi à partir de ce qu’il sait déjà, tu le recolles dans l’app, et chaque phrase est écrite à partir de ce profil. Pas d’IA ? Réponds plutôt à un questionnaire d’une minute.", faq3q:"Est-ce que ça marche avec ChatGPT et Claude ?", faq3a:"Oui, avec Claude, ChatGPT ou n’importe quel assistant IA capable de répondre à un prompt. Ça prend 3 clics : copier, demander à ton IA, coller.", faq4q:"Combien ça coûte ?", faq4a:"29,99 $ par an avec 7 jours d’essai gratuit, ou 4,99 $ par mois. Les abonnements sont gérés par Apple et résiliables à tout moment.", faq5q:"Mes données sont-elles privées ?", faq5a:"Ton profil sert uniquement à écrire tes phrases. Pas de pub, tes données ne sont jamais vendues, et tu peux supprimer ton compte à tout moment dans les Réglages.", firstBadge:"app de citations personnalisée par ta propre IA", resEyebrow:"La science derrière", resH:"Fondé sur la recherche, pas sur le hasard.", r1t:"Auto-affirmation", r1p:"Réfléchir à ses propres valeurs active les zones du cerveau liées à la récompense et à la perception de soi.", r2t:"Gratitude", r2p:"Les personnes qui notaient régulièrement ce dont elles étaient reconnaissantes déclaraient un meilleur bien-être que celles qui notaient leurs tracas.", r3t:"Des mots positifs, chaque jour", r3p:"Exprimer sa gratitude est régulièrement associé à plus de bonheur et de bien-être.", resNote:"Des études qui inspirent l’écriture de MyLotus. MyLotus n’est affilié à aucun de ces auteurs ni institutions.", nav1:"Être compris·e", nav2:"Sans effort", nav3:"Être soi", navCta:"Télécharger",
   eyebrow1:"Être compris·e", h1:"Une phrase écrite pour toi, chaque matin.",
   lead1:"MyLotus transforme ce que Claude ou ChatGPT sait déjà de toi en citations et affirmations personnalisées. Prêt en 3 clics.",
   trial:"<strong>7 jours gratuits</strong> avec l'offre annuelle",
@@ -269,7 +444,6 @@ var FR = {
       img.alt = l === 'fr' ? "Télécharger dans l'App Store" : 'Download on the App Store';
     });
     btn.textContent = l === 'fr' ? 'EN' : 'FR';
-    var rk=document.querySelector('.first-badge .rank'); if (rk) rk.textContent = l === 'fr' ? '1re' : '1st';
     try { localStorage.setItem('lotus-lang', l); } catch (e) {}
   }
   var saved = null; try { saved = localStorage.getItem('lotus-lang'); } catch (e) {}
@@ -294,6 +468,44 @@ var FR = {
       img.replaceWith(span);
     });
   });
+
+  // Free phrase demo
+  var PH = {
+    en: {
+      confidence:{gentle:"You are allowed to take up space. Start with one small yes to yourself today.",direct:"You don't need permission to be good at this. Go and prove it to yourself.",stoic:"Doubt is a thought, not a verdict. Act well, and let the result follow."},
+      calm:{gentle:"Breathe out a little longer than you breathe in. Nothing needs to be solved this minute.",direct:"Not everything deserves your energy today. Pick one thing and let the rest wait.",stoic:"You can't control the noise, only your answer to it. Choose a quiet one."},
+      motivation:{gentle:"Small steps still count. Today, one is enough.",direct:"Start before you feel ready. Ready comes later.",stoic:"The obstacle in front of you is the path. Take the next step."},
+      love:{gentle:"Speak to yourself today the way you would speak to someone you love.",direct:"Stop waiting to be someone else before you treat yourself well.",stoic:"Your worth is not up for debate. Live today as if you knew it."}
+    },
+    fr: {
+      confidence:{gentle:"Tu as le droit de prendre de la place. Commence par un petit oui à toi-même aujourd'hui.",direct:"Tu n'as besoin de la permission de personne pour être bon. Prouve-le-toi.",stoic:"Le doute est une pensée, pas un verdict. Agis bien, le résultat suivra."},
+      calm:{gentle:"Expire un peu plus longtemps que tu n'inspires. Rien n'a besoin d'être réglé dans la minute.",direct:"Tout ne mérite pas ton énergie aujourd'hui. Choisis une chose, le reste attendra.",stoic:"Tu ne contrôles pas le bruit, seulement ta réponse. Choisis-la calme."},
+      motivation:{gentle:"Les petits pas comptent aussi. Aujourd'hui, un seul suffit.",direct:"Commence avant de te sentir prêt. Prêt, ça vient après.",stoic:"L'obstacle devant toi est le chemin. Fais le pas suivant."},
+      love:{gentle:"Parle-toi aujourd'hui comme tu parlerais à quelqu'un que tu aimes.",direct:"Arrête d'attendre d'être quelqu'un d'autre pour bien te traiter.",stoic:"Ta valeur n'est pas en débat. Vis aujourd'hui comme si tu le savais."}
+    }
+  };
+  var modalEl = document.getElementById('tryModal'), pick = {}, go = document.getElementById('tryGo');
+  function openTry(){ modalEl.hidden = false; document.body.style.overflow = 'hidden'; }
+  function closeTry(){ modalEl.hidden = true; document.body.style.overflow = ''; }
+  function showForm(){ document.getElementById('tryForm').hidden = false; document.getElementById('tryResult').hidden = true; }
+  document.querySelectorAll('.js-try').forEach(function(b){ b.addEventListener('click', function(){ showForm(); openTry(); }); });
+  modalEl.querySelector('.try-close').addEventListener('click', closeTry);
+  modalEl.addEventListener('click', function(e){ if (e.target === modalEl) closeTry(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !modalEl.hidden) closeTry(); });
+  modalEl.querySelectorAll('.try-opts').forEach(function(g){
+    g.addEventListener('click', function(e){
+      var b = e.target.closest('button'); if (!b) return;
+      g.querySelectorAll('button').forEach(function(x){ x.classList.toggle('on', x === b); });
+      pick[g.dataset.group] = b.dataset.v; go.disabled = !(pick.goal && pick.tone);
+    });
+  });
+  go.addEventListener('click', function(){
+    var l = document.documentElement.lang === 'fr' ? 'fr' : 'en', q = PH[l][pick.goal][pick.tone];
+    document.getElementById('tryPhrase').textContent = (l === 'fr' ? '« ' + q + ' »' : '“' + q + '”');
+    document.getElementById('tryForm').hidden = true; document.getElementById('tryResult').hidden = false;
+  });
+  document.getElementById('tryAgain').addEventListener('click', showForm);
+  modalEl.querySelector('.js-store').addEventListener('click', function(){ if (!live) closeTry(); });
 
   // Header border on scroll
   var header = document.querySelector('.site-header');

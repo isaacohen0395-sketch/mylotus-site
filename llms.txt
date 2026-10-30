@@ -1,0 +1,23 @@
+# MyLotus
+
+> MyLotus is an iPhone app that writes one personalized quote, proverb or affirmation every morning, based on a profile written by the user's own AI assistant (Claude or ChatGPT).
+
+MyLotus ("MyLotus: Personalized Quotes" on the App Store) is published by Isaac Cohen in Paris, France. Contact: contact@my-lotus.app.
+
+Key facts:
+- Personalization: the app gives the user a prompt to paste into Claude, ChatGPT or another AI assistant. The assistant writes a short profile from what it already knows; the user pastes it back, and every phrase is written from that profile. A one-minute questionnaire is available for users without an AI assistant.
+- Each phrase comes with its author and the reason it was chosen for the user.
+- Features: daily personalized phrase, Instagram share cards, wallpapers, Couple pack (one mirror phrase for two).
+- Pricing: MyLotus Premium, $29.99 per year with a 7-day free trial, or $4.99 per month. Billed and managed by Apple.
+- Platform: iOS (iPhone). Languages: English and French.
+- Privacy: no ads, data never sold, account and data deletable in Settings. Profiles are sent to an AI model only with explicit consent.
+- Before the app, more than 11,000 people tried MyLotus phrases by message and email.
+
+## Pages
+- [Home](https://my-lotus.app/): What MyLotus does, how the 3-tap setup works, pricing and FAQ.
+- [Support](https://my-lotus.app/support/): FAQ on subscriptions, restoring purchases, changing phone, phrase language and account deletion.
+- [Privacy Policy](https://my-lotus.app/privacy/): What data is collected, how AI is used, and user rights.
+- [Terms of Use](https://my-lotus.app/terms/): Subscription terms and conditions.
+
+## Download
+- [MyLotus on the App Store](https://apps.apple.com/app/id6826226276)
