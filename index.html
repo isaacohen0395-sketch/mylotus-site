@@ -40,6 +40,7 @@
   <div class="container split">
     <div class="reveal">
       <div class="eyebrow"><b>01</b><span data-i18n="eyebrow1">Be understood</span></div>
+      <div class="first-badge"><span class="spark">✦</span><span data-i18n="firstBadge">The first quote app personalized by your own AI</span></div>
       <h1 style="margin-top:18px" data-i18n="h1">A phrase written for you, every morning.</h1>
       <p class="lead" data-i18n="lead1">MyLotus turns what Claude or ChatGPT already knows about you into personalized quotes and affirmations. Set up in 3 taps.</p>
       <div class="cta-row">
@@ -85,15 +86,17 @@
         <p data-i18n="s1p">Copy the Lotus prompt in one tap.</p>
         <div class="mock"><span class="pill ink" data-i18n="s1m">Copy prompt&nbsp;&nbsp;✓</span></div>
       </div>
+      <div class="link" aria-hidden="true"><i></i></div>
       <div class="step reveal">
         <div class="num">2</div>
         <h3 data-i18n="s2t">Ask your AI</h3>
         <p data-i18n="s2p">Paste it into Claude or ChatGPT. It writes a short profile of you in a box you can copy.</p>
         <div class="mock">
-          <div class="chips"><span>Claude</span><span>ChatGPT</span></div>
+          <div class="chips"><span class="ai-chip"><img src="/assets/ai-claude.svg" alt="" onerror="this.remove()">Claude</span><span class="ai-chip"><img src="/assets/ai-chatgpt.svg" alt="" onerror="this.remove()">ChatGPT</span></div>
           <div class="code"><em data-i18n="s2copy">Copy</em>LOTUS_PROFILE_START<br>GOALS: …<br>TONE: …</div>
         </div>
       </div>
+      <div class="link l2" aria-hidden="true"><i></i></div>
       <div class="step reveal">
         <div class="num">3</div>
         <h3 data-i18n="s3t">Paste</h3>
@@ -134,17 +137,29 @@
   </div>
 </section>
 
-<!-- BENEFITS -->
-<section class="benefits">
+<!-- RESEARCH -->
+<section class="research">
   <div class="container">
-    <div class="eyebrow reveal"><span data-i18n="benEyebrow">Benefits</span></div>
-    <h2 style="margin-top:14px;max-width:18ch" class="reveal" data-i18n="benH">Small words. Real mornings.</h2>
-    <div class="bgrid">
-      <div class="bcard reveal"><div class="n">01</div><h3 data-i18n="b1t">Start the day with intention</h3><p data-i18n="b1p">One phrase, one minute, before the noise of the day.</p></div>
-      <div class="bcard reveal"><div class="n">02</div><h3 data-i18n="b2t">Words that fit your life</h3><p data-i18n="b2p">Not generic quotes for everyone. Phrases that match your goals, your challenges and the tone you respond to.</p></div>
-      <div class="bcard reveal"><div class="n">03</div><h3 data-i18n="b3t">Inspired by well-being research</h3><p data-i18n="b3p">Self-affirmation, gratitude and positive reframing shape how every phrase is written.</p></div>
-      <div class="bcard reveal"><div class="n">04</div><h3 data-i18n="b4t">Private by design</h3><p data-i18n="b4p">No ads. Your data is never sold. Delete your account anytime in Settings.</p></div>
+    <div class="eyebrow reveal"><span data-i18n="resEyebrow">The science behind it</span></div>
+    <h2 style="margin-top:14px;max-width:20ch" class="reveal" data-i18n="resH">Grounded in research, not guesswork.</h2>
+    <div class="rgrid">
+      <a class="rcard reveal" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4814782/" target="_blank" rel="noopener">
+        <div class="rtopic" data-i18n="r1t">Self-affirmation</div>
+        <p data-i18n="r1p">Reflecting on your own values activates brain regions linked to reward and self-related processing.</p>
+        <div class="rsrc">Cascio et al., 2016 · <em>Social Cognitive and Affective Neuroscience</em></div>
+      </a>
+      <a class="rcard reveal" href="https://doi.org/10.1037/0022-3514.84.2.377" target="_blank" rel="noopener">
+        <div class="rtopic" data-i18n="r2t">Gratitude</div>
+        <p data-i18n="r2p">People who regularly wrote down what they were grateful for reported higher well-being than those who listed hassles.</p>
+        <div class="rsrc">Emmons &amp; McCullough, 2003 · <em>Journal of Personality and Social Psychology</em></div>
+      </a>
+      <a class="rcard reveal" href="https://www.health.harvard.edu/press_release/a-simple-thanks-may-boost-well-being" target="_blank" rel="noopener">
+        <div class="rtopic" data-i18n="r3t">Positive words, daily</div>
+        <p data-i18n="r3p">Expressing thanks is consistently associated with greater happiness and well-being.</p>
+        <div class="rsrc">Harvard Health Publishing · <em>Harvard Mental Health Letter</em></div>
+      </a>
     </div>
+    <p class="rnote reveal" data-i18n="resNote">Studies that inspire how MyLotus writes. MyLotus is not affiliated with these authors or institutions.</p>
   </div>
 </section>
 
@@ -203,7 +218,7 @@ var APP_STORE_URL = "https://apps.apple.com/app/id0000000000";
 /* =================================== */
 
 var FR = {
-  nav1:"Être compris·e", nav2:"Sans effort", nav3:"Être soi", navCta:"Télécharger",
+  firstBadge:"La première app de citations personnalisée par ta propre IA", resEyebrow:"La science derrière", resH:"Fondé sur la recherche, pas sur le hasard.", r1t:"Auto-affirmation", r1p:"Réfléchir à ses propres valeurs active les zones du cerveau liées à la récompense et à la perception de soi.", r2t:"Gratitude", r2p:"Les personnes qui notaient régulièrement ce dont elles étaient reconnaissantes déclaraient un meilleur bien-être que celles qui notaient leurs tracas.", r3t:"Des mots positifs, chaque jour", r3p:"Exprimer sa gratitude est régulièrement associé à plus de bonheur et de bien-être.", resNote:"Des études qui inspirent l’écriture de MyLotus. MyLotus n’est affilié à aucun de ces auteurs ni institutions.", nav1:"Être compris·e", nav2:"Sans effort", nav3:"Être soi", navCta:"Télécharger",
   eyebrow1:"Être compris·e", h1:"Une phrase écrite pour toi, chaque matin.",
   lead1:"MyLotus transforme ce que Claude ou ChatGPT sait déjà de toi en citations et affirmations personnalisées. Prêt en 3 clics.",
   trial:"<strong>7 jours gratuits</strong> avec l'offre annuelle",

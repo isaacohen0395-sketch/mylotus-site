@@ -177,3 +177,41 @@ section{padding:96px 0}
   .scan{text-align:center}
 }
 .legal section{padding:28px 0 0}
+
+/* First badge */
+.first-badge{display:inline-flex;align-items:center;gap:8px;margin-top:18px;background:var(--card);border:1px solid var(--sage);border-radius:999px;padding:7px 14px 7px 8px;font-size:13px;font-weight:600;color:var(--ink);box-shadow:0 6px 18px -10px rgba(74,115,57,.5)}
+.first-badge .spark{width:22px;height:22px;border-radius:50%;background:var(--sage);display:grid;place-items:center;font-size:11px}
+
+/* Steps connected by a glowing cord */
+.steps{grid-template-columns:1fr 64px 1fr 64px 1fr;gap:0}
+.link{position:relative;align-self:center;height:3px;margin:0 -2px;border-radius:3px;background:linear-gradient(90deg,#CFDCC7,#B9DFA2,#CFDCC7);z-index:1}
+.link::before,.link::after{content:"";position:absolute;top:50%;width:9px;height:9px;margin-top:-4.5px;border-radius:50%;background:var(--sage);box-shadow:0 0 0 3px var(--bg)}
+.link::before{left:-3px}.link::after{right:-3px}
+.link i{position:absolute;top:-3px;left:0;width:26px;height:9px;border-radius:9px;background:radial-gradient(closest-side,#fff,rgba(185,223,162,.95) 55%,rgba(185,223,162,0));box-shadow:0 0 12px 4px rgba(185,223,162,.9),0 0 26px 8px rgba(185,223,162,.45);animation:flowX 2.4s cubic-bezier(.5,0,.5,1) infinite}
+.link.l2 i{animation-delay:1.2s}
+@keyframes flowX{0%{transform:translateX(-14px);opacity:0}15%{opacity:1}85%{opacity:1}100%{transform:translateX(52px);opacity:0}}
+@keyframes flowY{0%{transform:translateY(-10px);opacity:0}15%{opacity:1}85%{opacity:1}100%{transform:translateY(40px);opacity:0}}
+.ai-chip{display:inline-flex;align-items:center;gap:7px}
+.ai-chip img{width:18px;height:18px;object-fit:contain}
+
+/* Research */
+.research{padding:88px 0}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
+.rcard{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:26px;padding:28px 24px;transition:transform .2s,box-shadow .2s}
+.rcard:hover{transform:translateY(-3px);box-shadow:0 18px 40px -24px rgba(42,49,42,.45)}
+.rtopic{font:600 26px/1.15 var(--serif)}
+.rcard p{margin:12px 0 0;color:var(--body);font-size:16px}
+.rsrc{margin-top:auto;padding-top:20px;font-size:13px;color:var(--sage-deep);font-weight:600}
+.rsrc em{font-weight:500;color:var(--muted)}
+.rnote{margin-top:18px;font-size:13px;color:var(--muted)}
+
+@media (max-width:960px){
+  .steps{grid-template-columns:1fr}
+  .link{justify-self:center;width:3px;height:48px;margin:-2px 0;background:linear-gradient(180deg,#CFDCC7,#B9DFA2,#CFDCC7)}
+  .link::before{left:50%;top:-3px;margin:0 0 0 -4.5px}
+  .link::after{left:50%;right:auto;top:auto;bottom:-3px;margin:0 0 0 -4.5px}
+  .link i{left:-3px;top:0;width:9px;height:24px;animation-name:flowY}
+  .rgrid{grid-template-columns:1fr}
+  .research{padding:64px 0}
+}
+@media (prefers-reduced-motion:reduce){.link i{animation:none;opacity:0}}
