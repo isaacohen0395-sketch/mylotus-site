@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="MyLotus">
+  <path d="M128 202 C130 186 127 168 129 148" fill="none" stroke="#2A312A" stroke-width="11" stroke-linecap="round"/>
+  <path d="M136 150 C150 126 172 108 198 102 C194 128 176 150 150 160 C144 158 139 155 136 150 Z" fill="#B9DFA2"/>
+  <path d="M146 150 C160 136 174 124 188 114" fill="none" stroke="#F0F3EE" stroke-width="4" stroke-linecap="round" opacity=".9"/>
+  <path d="M124 34 C100 64 84 98 88 124 C91 146 106 158 124 158 C142 158 156 146 158 124 C161 98 146 64 124 34 Z" fill="#B9DFA2"/>
+  <path d="M124 60 C116 84 114 112 120 146" fill="none" stroke="#F0F3EE" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+  <path d="M56 214 C56 202 88 194 128 194 C168 194 200 202 200 214 C200 226 168 232 136 232 L128 216 L120 232 C88 232 56 226 56 214 Z" fill="#2A312A"/>
+</svg>
