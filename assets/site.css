@@ -239,3 +239,9 @@ section{padding:96px 0}
 .rv b{display:block;font-size:15px}
 .rv small{color:var(--muted);font-size:13px}
 @media (max-width:960px){.rvgrid{grid-template-columns:1fr}.reviews{padding:64px 0}}
+
+.first-badge .rank{display:inline-flex;align-items:baseline;justify-content:center;min-width:34px;height:24px;padding:0 7px;border-radius:999px;background:var(--ink);color:#fff;font:700 13px/24px var(--sans)}
+.first-badge .rank sup{font-size:9px;margin-left:1px;line-height:0}
+.mini-ai{display:inline-flex;align-items:center;gap:4px;margin-left:4px;padding-left:10px;border-left:1px solid var(--line)}
+.mini-ai img{width:16px;height:16px;object-fit:contain}
+.reviews.tight{padding:48px 0 72px}
