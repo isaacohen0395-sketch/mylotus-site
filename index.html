@@ -308,6 +308,32 @@
   </div>
 </section>
 
+<!-- WIDGET -->
+<section class="widget-sec">
+  <div class="container split">
+    <div class="reveal">
+      <span class="soon" data-i18n="wSoon">Coming soon</span>
+      <h2 style="margin-top:16px" data-i18n="wH">Your phrase, right on your home screen.</h2>
+      <p class="lead" data-i18n="wP">A MyLotus widget puts today's phrase where you look a hundred times a day. No need to open the app.</p>
+    </div>
+    <div class="split-media media-wrap reveal">
+      <div class="phone home" aria-hidden="true">
+        <div class="screen home-screen">
+          <div class="hs-time">9:41</div>
+          <div class="widget-md">
+            <div class="w-head"><img src="/assets/logo.svg" alt=""><span>MyLotus</span><em data-i18n="wToday">Today</em></div>
+            <div class="w-quote" data-i18n="wQuote">“You've already done harder things than this.”</div>
+            <div class="w-why" data-i18n="wWhy">For your big presentation today</div>
+          </div>
+          <div class="app-grid"><span class="app-ic" style="background:#E7D9C9"></span><span class="app-ic" style="background:#CFE0EA"></span><span class="app-ic" style="background:#E9CFD4"></span><span class="app-ic" style="background:#D9E3C9"></span><span class="app-ic" style="background:#E2DAEE"></span><span class="app-ic" style="background:#F0DEC0"></span><span class="app-ic" style="background:#CDE5DD"></span><span class="app-ic" style="background:#DCE6EE"></span><span class="app-ic" style="background:#EADBCB"></span><span class="app-ic" style="background:#D5E6CF"></span><span class="app-ic" style="background:#E8D3DD"></span><span class="app-ic lotus"><img src="/assets/logo.svg" alt=""></span></div>
+          <div class="dock"><span class="app-ic" style="background:#D6E4D0"></span><span class="app-ic" style="background:#E4DCCF"></span><span class="app-ic" style="background:#D3DDE8"></span><span class="app-ic" style="background:#E8D5D8"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- FAQ -->
 <section class="faq" id="faq">
   <div class="container">
@@ -376,10 +402,23 @@
       </div>
       <button type="button" class="btn-try wide" id="tryGo" disabled data-i18n="tryGo">Show my phrase</button>
     </div>
+    <div class="try-step try-loading" id="tryLoading" hidden>
+      <img src="/assets/logo.svg" alt="" class="breathe">
+      <p data-i18n="tryLoad">Lotus is writing your phrase…</p>
+      <div class="bar"><i></i></div>
+    </div>
     <div class="try-step" id="tryResult" hidden>
       <span class="tag" data-i18n="tryTag">A taste of MyLotus</span>
       <blockquote id="tryPhrase"></blockquote>
       <p class="try-note" data-i18n="tryNote">In the app, every phrase is written from your own profile, with the reason behind it.</p>
+      <div class="more">
+        <p class="more-t" data-i18n="moreT">Make it even more personal with your AI</p>
+        <div class="more-btns">
+          <button type="button" class="ai-btn js-more"><img src="/assets/ai-claude.png" alt="">Claude</button>
+          <button type="button" class="ai-btn js-more"><img src="/assets/ai-chatgpt.png" alt="">ChatGPT</button>
+        </div>
+        <p class="more-msg" id="moreMsg" hidden data-i18n="moreMsg">Connecting your AI happens in the app: download MyLotus, copy the prompt, paste the answer. Your first fully personal phrase is ready in 3 taps.</p>
+      </div>
       <a class="btn-try wide js-store" href="#download" data-i18n="tryCta">Get yours every morning, 7 days free</a>
       <button type="button" class="try-again" id="tryAgain" data-i18n="tryAgain">Try another</button>
     </div>
@@ -394,7 +433,7 @@ var APP_STORE_URL = "https://apps.apple.com/app/id6826226276";
 /* =================================== */
 
 var FR = {
-  proofStat:"personnes ont essayé les phrases MyLotus par message et par e-mail, bien avant que ce soit une app.", pressLabel:"Les idées derrière MyLotus, explorées dans", revEyebrow:"Avant que ce soit une app", revH:"Ce qu’on nous a dit.", revLead:"Des messages de personnes qui recevaient des phrases personnalisées par message et par e-mail, avant que MyLotus devienne une app.", rv1:"« C’est incroyable comme ça booste et redonne confiance en soi. »", rv1w:"21 ans · Étudiante en médecine", rv2:"« Un vrai coup de boost au quotidien. »", rv2w:"36 ans · Maman", rv3:"« C’est absolument génial, à quel point ça me connaît. »", rv3w:"28 ans · Avocat", revNote:"Partagés avec leur accord.", tryBtn:"Essaie gratuitement une phrase faite pour toi", tryH:"Ta phrase gratuite, en 2 clics", tryQ1:"De quoi as-tu le plus besoin en ce moment ?", gConf:"Confiance", gCalm:"Calme", gMot:"Motivation", gLove:"Amour de soi", tryQ2:"Quel ton te parle ?", tGentle:"Doux", tDirect:"Direct", tStoic:"Stoïcien", tryGo:"Voir ma phrase", tryTag:"Un avant-goût de MyLotus", tryNote:"Dans l’app, chaque phrase est écrite à partir de ton propre profil, avec la raison derrière.", tryCta:"Reçois la tienne chaque matin, 7 jours gratuits", tryAgain:"Une autre", faqH:"Vos questions, nos réponses.", faq1q:"Qu’est-ce que MyLotus ?", faq1a:"Une app iPhone qui t’écrit chaque matin une citation, un proverbe ou une affirmation personnalisés, choisis pour tes objectifs, tes défis et le ton qui te parle.", faq2q:"Comment mes phrases sont-elles personnalisées ?", faq2a:"MyLotus te donne un prompt à coller dans Claude ou ChatGPT. Ton assistant écrit un court profil de toi à partir de ce qu’il sait déjà, tu le recolles dans l’app, et chaque phrase est écrite à partir de ce profil. Pas d’IA ? Réponds plutôt à un questionnaire d’une minute.", faq3q:"Est-ce que ça marche avec ChatGPT et Claude ?", faq3a:"Oui, avec Claude, ChatGPT ou n’importe quel assistant IA capable de répondre à un prompt. Ça prend 3 clics : copier, demander à ton IA, coller.", faq4q:"Combien ça coûte ?", faq4a:"29,99 $ par an avec 7 jours d’essai gratuit, ou 4,99 $ par mois. Les abonnements sont gérés par Apple et résiliables à tout moment.", faq5q:"Mes données sont-elles privées ?", faq5a:"Ton profil sert uniquement à écrire tes phrases. Pas de pub, tes données ne sont jamais vendues, et tu peux supprimer ton compte à tout moment dans les Réglages.", firstBadge:"app de citations personnalisée par ta propre IA", resEyebrow:"La science derrière", resH:"Fondé sur la recherche, pas sur le hasard.", r1t:"Auto-affirmation", r1p:"Réfléchir à ses propres valeurs active les zones du cerveau liées à la récompense et à la perception de soi.", r2t:"Gratitude", r2p:"Les personnes qui notaient régulièrement ce dont elles étaient reconnaissantes déclaraient un meilleur bien-être que celles qui notaient leurs tracas.", r3t:"Des mots positifs, chaque jour", r3p:"Exprimer sa gratitude est régulièrement associé à plus de bonheur et de bien-être.", resNote:"Des études qui inspirent l’écriture de MyLotus. MyLotus n’est affilié à aucun de ces auteurs ni institutions.", nav1:"Être compris·e", nav2:"Sans effort", nav3:"Être soi", navCta:"Télécharger",
+  proofStat:"personnes ont essayé les phrases MyLotus par message et par e-mail, bien avant que ce soit une app.", pressLabel:"Les idées derrière MyLotus, explorées dans", revEyebrow:"Avant que ce soit une app", revH:"Ce qu’on nous a dit.", revLead:"Des messages de personnes qui recevaient des phrases personnalisées par message et par e-mail, avant que MyLotus devienne une app.", rv1:"« C’est incroyable comme ça booste et redonne confiance en soi. »", rv1w:"21 ans · Étudiante en médecine", rv2:"« Un vrai coup de boost au quotidien. »", rv2w:"36 ans · Maman", rv3:"« C’est absolument génial, à quel point ça me connaît. »", rv3w:"28 ans · Avocat", revNote:"Partagés avec leur accord.", tryBtn:"Essaie gratuitement une phrase faite pour toi", tryH:"Ta phrase gratuite, en 2 clics", tryQ1:"De quoi as-tu le plus besoin en ce moment ?", gConf:"Confiance", gCalm:"Calme", gMot:"Motivation", gLove:"Amour de soi", tryQ2:"Quel ton te parle ?", tGentle:"Doux", tDirect:"Direct", tStoic:"Stoïcien", tryGo:"Voir ma phrase", tryTag:"Un avant-goût de MyLotus", tryNote:"Dans l’app, chaque phrase est écrite à partir de ton propre profil, avec la raison derrière.", tryCta:"Reçois la tienne chaque matin, 7 jours gratuits", tryAgain:"Une autre", faqH:"Vos questions, nos réponses.", faq1q:"Qu’est-ce que MyLotus ?", faq1a:"Une app iPhone qui t’écrit chaque matin une citation, un proverbe ou une affirmation personnalisés, choisis pour tes objectifs, tes défis et le ton qui te parle.", faq2q:"Comment mes phrases sont-elles personnalisées ?", faq2a:"MyLotus te donne un prompt à coller dans Claude ou ChatGPT. Ton assistant écrit un court profil de toi à partir de ce qu’il sait déjà, tu le recolles dans l’app, et chaque phrase est écrite à partir de ce profil. Pas d’IA ? Réponds plutôt à un questionnaire d’une minute.", faq3q:"Est-ce que ça marche avec ChatGPT et Claude ?", faq3a:"Oui, avec Claude, ChatGPT ou n’importe quel assistant IA capable de répondre à un prompt. Ça prend 3 clics : copier, demander à ton IA, coller.", faq4q:"Combien ça coûte ?", faq4a:"29,99 $ par an avec 7 jours d’essai gratuit, ou 4,99 $ par mois. Les abonnements sont gérés par Apple et résiliables à tout moment.", faq5q:"Mes données sont-elles privées ?", faq5a:"Ton profil sert uniquement à écrire tes phrases. Pas de pub, tes données ne sont jamais vendues, et tu peux supprimer ton compte à tout moment dans les Réglages.", wSoon:"Bientôt", wH:"Ta phrase, directement sur ton écran d’accueil.", wP:"Le widget MyLotus met la phrase du jour là où tu regardes cent fois par jour. Pas besoin d’ouvrir l’app.", wToday:"Aujourd’hui", wQuote:"« Tu as déjà traversé plus difficile que ça. »", wWhy:"Pour ta grande présentation aujourd’hui", tryLoad:"Lotus écrit ta phrase…", moreT:"Rends-la encore plus personnelle avec ton IA", moreMsg:"La connexion à ton IA se fait dans l’app : télécharge MyLotus, copie le prompt, colle la réponse. Ta première phrase 100 % personnelle est prête en 3 clics.", firstBadge:"app de citations personnalisée par ta propre IA", resEyebrow:"La science derrière", resH:"Fondé sur la recherche, pas sur le hasard.", r1t:"Auto-affirmation", r1p:"Réfléchir à ses propres valeurs active les zones du cerveau liées à la récompense et à la perception de soi.", r2t:"Gratitude", r2p:"Les personnes qui notaient régulièrement ce dont elles étaient reconnaissantes déclaraient un meilleur bien-être que celles qui notaient leurs tracas.", r3t:"Des mots positifs, chaque jour", r3p:"Exprimer sa gratitude est régulièrement associé à plus de bonheur et de bien-être.", resNote:"Des études qui inspirent l’écriture de MyLotus. MyLotus n’est affilié à aucun de ces auteurs ni institutions.", nav1:"Être compris·e", nav2:"Sans effort", nav3:"Être soi", navCta:"Télécharger",
   eyebrow1:"Être compris·e", h1:"Une phrase écrite pour toi, chaque matin.",
   lead1:"MyLotus transforme ce que Claude ou ChatGPT sait déjà de toi en citations et affirmations personnalisées. Prêt en 3 clics.",
   trial:"<strong>7 jours gratuits</strong> avec l'offre annuelle",
@@ -487,7 +526,7 @@ var FR = {
   var modalEl = document.getElementById('tryModal'), pick = {}, go = document.getElementById('tryGo');
   function openTry(){ modalEl.hidden = false; document.body.style.overflow = 'hidden'; }
   function closeTry(){ modalEl.hidden = true; document.body.style.overflow = ''; }
-  function showForm(){ document.getElementById('tryForm').hidden = false; document.getElementById('tryResult').hidden = true; }
+  function showForm(){ document.getElementById('tryForm').hidden = false; document.getElementById('tryResult').hidden = true; document.getElementById('tryLoading').hidden = true; }
   document.querySelectorAll('.js-try').forEach(function(b){ b.addEventListener('click', function(){ showForm(); openTry(); }); });
   modalEl.querySelector('.try-close').addEventListener('click', closeTry);
   modalEl.addEventListener('click', function(e){ if (e.target === modalEl) closeTry(); });
@@ -502,8 +541,15 @@ var FR = {
   go.addEventListener('click', function(){
     var l = document.documentElement.lang === 'fr' ? 'fr' : 'en', q = PH[l][pick.goal][pick.tone];
     document.getElementById('tryPhrase').textContent = (l === 'fr' ? '« ' + q + ' »' : '“' + q + '”');
-    document.getElementById('tryForm').hidden = true; document.getElementById('tryResult').hidden = false;
+    document.getElementById('tryForm').hidden = true;
+    document.getElementById('moreMsg').hidden = true;
+    var ld = document.getElementById('tryLoading'); ld.hidden = false;
+    setTimeout(function(){ ld.hidden = true; document.getElementById('tryResult').hidden = false; }, 2200);
   });
+  document.querySelectorAll('.js-more').forEach(function(b){ b.addEventListener('click', function(){
+    document.getElementById('moreMsg').hidden = false;
+    var cta = document.querySelector('#tryResult .js-store'); cta.classList.add('pulse'); setTimeout(function(){ cta.classList.remove('pulse'); }, 1600);
+  }); });
   document.getElementById('tryAgain').addEventListener('click', showForm);
   modalEl.querySelector('.js-store').addEventListener('click', function(){ if (!live) closeTry(); });
 
